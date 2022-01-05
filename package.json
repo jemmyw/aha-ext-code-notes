@@ -1,0 +1,27 @@
+{
+  "name": "kealabs.code-notes",
+  "description": "Code Notes",
+  "version": "0.0.0",
+  "author": "kealabs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kealabs/code-notes"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.38"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "commands": {
+        "githubCodeHandler": {
+          "title": "Github Code Handler",
+          "entryPoint": "src/events/githubCodeHandler.tsx",
+          "handles": [
+            "aha.editor.referenceExtension"
+          ]
+        }
+      }
+    }
+  }
+}
